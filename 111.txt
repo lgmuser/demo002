@@ -1,0 +1,134 @@
+
+93743@LAPTOP-EFN4U5GJ MINGW64 /d/work/gitrepo/278 (master)
+$ ls
+
+93743@LAPTOP-EFN4U5GJ MINGW64 /d/work/gitrepo/278 (master)
+$ pwd
+/d/work/gitrepo/278
+
+93743@LAPTOP-EFN4U5GJ MINGW64 /d/work/gitrepo/278 (master)
+$ git init
+Reinitialized existing Git repository in D:/work/gitrepo/278/.git/
+
+93743@LAPTOP-EFN4U5GJ MINGW64 /d/work/gitrepo/278 (master)
+$ ^C
+
+93743@LAPTOP-EFN4U5GJ MINGW64 /d/work/gitrepo/278 (master)
+$ ls -a
+./  ../  .git/
+
+93743@LAPTOP-EFN4U5GJ MINGW64 /d/work/gitrepo/278 (master)
+$ touch 111.txt
+
+93743@LAPTOP-EFN4U5GJ MINGW64 /d/work/gitrepo/278 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   111.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        222.txt
+
+
+93743@LAPTOP-EFN4U5GJ MINGW64 /d/work/gitrepo/278 (master)
+$ git add *.txt
+
+93743@LAPTOP-EFN4U5GJ MINGW64 /d/work/gitrepo/278 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   111.txt
+        new file:   222.txt
+
+
+93743@LAPTOP-EFN4U5GJ MINGW64 /d/work/gitrepo/278 (master)
+$ git commit -m 首次提交
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got '93743@LAPTOP-EFN4U5GJ.(none)')
+
+93743@LAPTOP-EFN4U5GJ MINGW64 /d/work/gitrepo/278 (master)
+$ git commit -m 首次提交
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got '93743@LAPTOP-EFN4U5GJ.(none)')
+
+93743@LAPTOP-EFN4U5GJ MINGW64 /d/work/gitrepo/278 (master)
+$ ^C
+
+93743@LAPTOP-EFN4U5GJ MINGW64 /d/work/gitrepo/278 (master)
+$ git config --global user.email "937432364@qq.com"
+
+93743@LAPTOP-EFN4U5GJ MINGW64 /d/work/gitrepo/278 (master)
+$ git config --global user.name "lgmuser"
+
+93743@LAPTOP-EFN4U5GJ MINGW64 /d/work/gitrepo/278 (master)
+$ git config -l
+diff.astextplain.textconv=astextplain
+filter.lfs.clean=git-lfs clean -- %f
+filter.lfs.smudge=git-lfs smudge -- %f
+filter.lfs.process=git-lfs filter-process
+filter.lfs.required=true
+http.sslbackend=openssl
+http.sslcainfo=D:/program files/Git/mingw64/ssl/certs/ca-bundle.crt
+core.autocrlf=true
+core.fscache=true
+core.symlinks=false
+credential.helper=manager
+core.editor=notepad++
+user.email=937432364@qq.com
+user.name=lgmuser
+core.repositoryformatversion=0
+core.filemode=false
+core.bare=false
+core.logallrefupdates=true
+core.symlinks=false
+core.ignorecase=true
+remote.origin.url=http://github.com/lgmuser/dome002.git
+remote.origin.fetch=+refs/heads/*:refs/remotes/origin/*
+
+93743@LAPTOP-EFN4U5GJ MINGW64 /d/work/gitrepo/278 (master)
+$ git commit -m 首次提交
+[master (root-commit) e0bd24a] 首次提交
+ 2 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 111.txt
+ create mode 100644 222.txt
+
+93743@LAPTOP-EFN4U5GJ MINGW64 /d/work/gitrepo/278 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+93743@LAPTOP-EFN4U5GJ MINGW64 /d/work/gitrepo/278 (master)
+$ notepad++ 111.txt
+bash: notepad++: command not found
+
+93743@LAPTOP-EFN4U5GJ MINGW64 /d/work/gitrepo/278 (master)
+$ D:\program files\Notepad++
